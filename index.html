@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budget</title>
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Budget Tracker</h1>
+
+        <form class="inputs">
+
+        <div class="box">
+            <h2 class="box-title">Your Income</h2>
+
+            <label for="income-des" class="input-labels">Income Description:</label>
+            <input type="text" id="income-des" placeholder="Describe Your Income">
+
+            <label for="income-amount" class="input-labels">Income Amount:</label>
+            <input type="text" id="income-amount" placeholder="Enter Your Income">
+
+            <button type="button" id="addIncomeButton" class="add">Add Income</button>
+        </div>
+
+        <div class="box">
+            <h2 class="box-title">Your Expenses</h2>
+
+            <label for="expenses-des" class="input-labels">Expense Description:</label>
+            <input type="text" id="expenses-des" placeholder="Describe Your Expense">
+
+            <label for="expenses-amount" class="input-labels">Expense Amount:</label>
+            <input type="text" id="expenses-amount" placeholder="Enter Your Expense">
+
+            <button type="button" id="addExpensesBtn" class="add">Add Expense</button>
+        </div>
+    </form>
+
+        <div class="budget-box" id="budget-box">
+            <h3 id="income-result">Total Income: $0.00</h3>
+            <h3 id="expenses-result">Total Expenses: $0.00</h3>
+            <h3 id="budget-result">Remaining Budget: $0.00</h3>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

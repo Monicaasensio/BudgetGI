@@ -1,0 +1,94 @@
+$primary-color: #037297;
+$secondary-color: antiquewhite;
+$third-color: #fff;
+$text-color: #000;
+$text-color2: #fff;
+$title-font: 2rem;
+$header-font: 1.5rem;
+$font-size2: 1rem;
+
+//mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@mixin gradient($color1, $color2) {
+    background: linear-gradient(to right, $color1, $color2);
+}
+
+main {
+    @include gradient($primary-color, $secondary-color);
+    width: 100%;
+    margin: 0;
+    height: 100vh; 
+
+    .title {
+        color: $primary-color;
+        font-size: $title-font;
+        text-align: center;
+    }
+}
+
+//input styles
+.inputs {
+    background-color: $secondary-color;
+    width: 70%;
+    @include flex-center;
+    flex-wrap: wrap;
+
+    .box {
+        background-color: $primary-color;
+        text-align: center;
+        margin: 1rem;
+        padding: 1rem;
+        height: 400px;
+        width: 300px;
+    }
+
+    label, input {
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    input {
+        line-height: 2rem;
+    }
+
+    .box-title {
+        font-size: $title-font;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+
+    .input-labels {
+        font-size: $header-font;
+        color: $text-color;
+        font-weight: 400;
+    }
+
+    .add {
+        @include flex-center;
+        background-color: $secondary-color;
+        padding: 0.5rem;
+        width: 8rem;
+        color: $primary-color;
+        border: 2px solid $text-color2;
+        border-radius: 20%;
+        font-size: $font-size2;
+        font-weight: 600;
+    }
+}
+
+//budget box Styles
+.budget-box {
+    background-color: $primary-color;
+    color: $text-color2;
+    @include flex-center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 70%;
+}

@@ -1,0 +1,73 @@
+main {
+  background: linear-gradient(to right, #037297, antiquewhite);
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+main .title {
+  color: #037297;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.inputs {
+  background-color: antiquewhite;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.inputs .box {
+  background-color: #037297;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  height: 400px;
+  width: 300px;
+}
+.inputs label, .inputs input {
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.inputs input {
+  line-height: 2rem;
+}
+.inputs .box-title {
+  font-size: 2rem;
+  color: antiquewhite;
+  font-weight: 700;
+}
+.inputs .input-labels {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+}
+.inputs .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: antiquewhite;
+  padding: 0.5rem;
+  width: 8rem;
+  color: #037297;
+  border: 2px solid #fff;
+  border-radius: 20%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.budget-box {
+  background-color: #037297;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 70%;
+}/*# sourceMappingURL=styles.css.map */
